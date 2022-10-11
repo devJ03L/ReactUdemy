@@ -22,7 +22,7 @@ describe('Pruebas en <GiftItem/> ', () => {
         expect(alt).toBe(alt)
     })
 
-    test('Debe mostrar el titulo en el componente', ()=>{
+    test('Debe mostrar el titulo en el componente', () => {
         render(<GiftItem title={title} url={url}/>)
         expect(screen.getByText(title)).toBeTruthy()
     })
