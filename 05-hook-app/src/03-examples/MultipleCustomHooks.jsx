@@ -14,14 +14,15 @@ export const MultipleCustomHooks = () => {
             <hr />
             {
                 isLoading
-                ?
-                    <LoadingQuote/>
-                :
-                <>
-                    <Quote quote={quote} author={author}/>
-                    <button className="btn btn-primary" onClick={() => incrementar(1)}>Next quote</button>
-                </>
+                ?<LoadingQuote />
+                :<Quote quote={quote} author={author} />
             }
+            <button
+                className="btn btn-primary"
+                onClick={() => incrementar(1)}
+                disabled={isLoading}>
+                Next quote
+            </button>
 
         </>
     )

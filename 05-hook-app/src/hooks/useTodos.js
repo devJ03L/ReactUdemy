@@ -11,7 +11,7 @@ export const useTodos = () => {
 
     const onNewTodo = todo => {
         const action = {
-            type: '[TODO] Add Todo}',
+            type: '[TODO] Add Todo',
             payload: todo
         }
         dispatch(action)
@@ -19,7 +19,7 @@ export const useTodos = () => {
 
     const onDeleteTodo = (id) => {
         const action = {
-            type: '[TODO] Remove Todo}',
+            type: '[TODO] Remove Todo',
             payload: id
         }
         dispatch(action)
@@ -27,7 +27,7 @@ export const useTodos = () => {
 
     const onToogleTodo = (id) => {
         const action = {
-            type: '[TODO] Toogle Todo}',
+            type: '[TODO] Toogle Todo',
             payload: id
         }
         dispatch(action)
